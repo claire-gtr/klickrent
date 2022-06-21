@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bestoffer</title>
+    <g id="Basic-UI-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="International_Site_L_German-Icon" transform="translate(-549.000000, -1631.000000)">
+            <g id="Group-10" transform="translate(0.000000, 1285.000000)">
+                <g transform="translate(-82.000000, 0.000000)" id="Bestoffer">
+                    <g transform="translate(631.000000, 346.000000)">
+                        <rect id="Rectangle" fill="#E5EFF4" x="0" y="0" width="110" height="110" rx="3.1392"></rect>
+                        <g id="Group-5" transform="translate(19.977956, 22.785714)">
+                            <g id="Group-8" transform="translate(26.934258, 0.000000)" stroke-width="1.5696">
+                                <g id="Path-25" transform="translate(8.302071, 11.785714)" stroke="#FAA61A">
+                                    <line x1="0.545739951" y1="0" x2="0.545739951" y2="5.09781081" id="Path-4"></line>
+                                </g>
+                                <g id="Path-25" transform="translate(2.548905, 8.035714) rotate(-270.000000) translate(-2.548905, -8.035714) translate(2.003165, 5.486809)" stroke="#F9AD2E">
+                                    <line x1="0.545739951" y1="-1.17878107e-12" x2="0.545739951" y2="5.09781081" id="Path-4"></line>
+                                </g>
+                                <line x1="15.0203126" y1="12.8760717" x2="9.92250177" y2="12.8760717" id="Path-4" stroke="#FAA61A" transform="translate(12.471407, 12.876072) rotate(44.000000) translate(-12.471407, -12.876072) "></line>
+                                <line x1="3.99347381" y1="1.14012124" x2="3.99347381" y2="6.23793205" id="Path-4" stroke="#FAA61A" transform="translate(3.993474, 3.689027) rotate(-226.000000) translate(-3.993474, -3.689027) "></line>
+                                <g id="Group-17" transform="translate(8.704163, 8.029006) rotate(136.000000) translate(-8.704163, -8.029006) translate(-0.914733, 7.359748)" stroke="#FAA61A">
+                                    <line x1="19.2377925" y1="0.545851014" x2="14.1399817" y2="0.545851014" id="Path-4"></line>
+                                    <line x1="5.09781081" y1="0.792665313" x2="1.73273464e-12" y2="0.792665313" id="Path-4"></line>
+                                </g>
+                                <line x1="8.694928" y1="0" x2="8.694928" y2="4.71428571" id="Path-4" stroke="#FAA61A"></line>
+                                <line x1="17.7306423" y1="8.25" x2="13.0163566" y2="8.25" id="Path-4" stroke="#FAA61A"></line>
+                            </g>
+                            <path d="M0,60.3813126 L0,37.0995707 C1.1588412e-16,36.2327046 0.702733857,35.5299707 1.5696,35.5299707 L18.6036368,35.5299707 C19.4705029,35.5299707 20.1732368,36.2327046 20.1732368,37.0995707 L20.1732368,60.3813126 L20.1732368,60.3813126" id="Path-14" stroke="#0171B7" stroke-width="2.3544"></path>
+                            <path d="M25.1428571,60.3813126 L25.1428571,26.5937698 C25.1428571,25.7269036 25.845591,25.0241698 26.7124571,25.0241698 L43.7464939,25.0241698 C44.61336,25.0241698 45.3160939,25.7269036 45.3160939,26.5937698 L45.3160939,60.3813126 L45.3160939,60.3813126" id="Path-14" stroke="#0171B7" stroke-width="2.3544"></path>
+                            <path d="M50.2857143,60.3813126 L50.2857143,43.0937698 C50.2857143,42.2269036 50.9884481,41.5241698 51.8553143,41.5241698 L68.889351,41.5241698 C69.7562172,41.5241698 70.458951,42.2269036 70.458951,43.0937698 L70.458951,60.3813126 L70.458951,60.3813126" id="Path-14" stroke="#0171B7" stroke-width="2.3544"></path>
+                            <text id="€" font-family="Roboto-Bold, Roboto" font-size="20" font-weight="bold" letter-spacing="0.32" fill="#0171B7">
+                                <tspan x="29" y="50">€</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Profile</title>
+    <g id="Basic-UI-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="International_Site_L_German-Icon" transform="translate(-691.000000, -1351.000000)">
+            <g id="Group-10" transform="translate(0.000000, 1285.000000)">
+                <g transform="translate(-82.000000, 0.000000)" id="Profile">
+                    <g transform="translate(773.000000, 66.000000)">
+                        <rect id="Rectangle" fill="#E5EFF4" x="0" y="0" width="110" height="110" rx="3.1392"></rect>
+                        <g id="Group-3" transform="translate(7.857143, 7.857143)">
+                            <rect id="Rectangle" stroke="#979797" stroke-width="7.848" opacity="0" x="3.924" y="3.924" width="86.4377143" height="86.4377143"></rect>
+                            <path d="M23.9455782,82.6178571 L23.9455782,78.2827143 C23.9455782,71.7812182 29.2160822,66.5107143 35.7175782,66.5107143 L56.5664354,66.5107143 C63.0679314,66.5107143 68.3384354,71.7812182 68.3384354,78.2827143 L68.3384354,82.6178571 L68.3384354,82.6178571" id="Path-44" stroke="#0171B7" stroke-width="3.924"></path>
+                            <g id="Group-17" transform="translate(23.918784, 12.532143)" stroke="#0171B7" stroke-width="3.924">
+                                <path d="M11.4383586,30.5422461 C11.4383586,34.6570963 12.412479,43.1136747 21.1535053,43.1136747 C29.8945316,43.1136747 31.0812157,34.3290272 31.0812157,30.5422461" id="Path-47"></path>
+                                <path d="M7.50978713,6.97081751 C7.50978713,11.0856678 8.87355572,19.5422461 21.1109925,19.5422461 C33.3484293,19.5422461 35.0097871,10.7575986 35.0097871,6.97081751" id="Path-47" transform="translate(21.259787, 13.256532) rotate(-180.000000) translate(-21.259787, -13.256532) "></path>
+                                <path d="M0,22.6851032 C0,22.6851032 14.1500674,22.6851032 42.4502021,22.6851032" id="Path-49"></path>
+                                <line x1="21.2424444" y1="0" x2="21.2597871" y2="14.7410779" id="Path-45"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

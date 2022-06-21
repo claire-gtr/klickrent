@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>%%title%%</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- <meta name="robots" content="index, follow"> -->
+    <meta name="description" content=%%description%%/>
+    <!-- <meta name="author" content="NVB"> -->
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- icons -->
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    
+    <!-- fonts -->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">    
+    
+    <style>
+      :root {
+        --primary-main: #0171B7;
+        --primary-dark: #0D548C;
+        --primary-light: #E7F2F8;
+        --primary-contrast-text: #FFFFFF;
+        --primary-background: #2196F3;
+        --secondary-main: #FAA619;
+        --secondary-dark: #DE7F1F;
+        --secondary-light: #FDE4BA;
+        --secondary-contrast-text: #303030;
+        --secondary-background: #0171B7;
+        --success-main: #237B4B;
+        --success-dark: #206640;
+        --success-light: #EEF5F1;
+        --success-background: #237B4B;
+        --error-main: #C4314B;
+        --error-dark: #952639;
+        --error-light: #EDC1C9;
+        --error-background: #F44336;
+        --text-primary-klickrent: #303030;
+        --text-disabled: #707070;
+        --grey-50: #f9f9f9f9;
+        --grey-100: #F5F5F5;
+        --grey-200: #EEEEEE;
+        --grey-300: #d5d5d5;
+        --grey-400: #BDBDBD;
+        --grey-500: #9E9E9E;
+        --grey-600: #707070;
+        --grey-700: #505050;
+        --grey-800: #303030;
+        --box-shadow-light: 0px 2px 4px rgb(0 0 0/16%);
+        --border-radius-light: 4px;
+      }
+
+      h1, h2, h3, h4, body {
+        font-family: 'Roboto', sans-serif;
+        color: var(--grey-800);
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size:48px;
+      }
+
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size:24px;
+        font-style: italic;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size:20px;
+      }
+
+      .text-button {
+        font-weight: 400;
+        font-size:16px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 0.32px;
+      }
+
+      .text-small {
+        font-size: 12px;
+      }
+
+      .text-grey {
+        color: var(--grey-600);
+      }
+
+      .text-primary-klickrent, a {
+        color: var(--secondary-background);
+      }
+
+      body {
+        background-color: #F9F9F9;
+      }
+
+      .container-fluid {
+        padding: 0px 24px;
+      }
+
+      .navbar-klickrent {
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-between;
+        background: white;
+        height: 70px;
+      }
+
+      .navbar-klickrent .navbar-collapse {
+        flex-grow: 0;
+      }
+
+      .navbar-klickrent .navbar-brand img {
+        height: 40px;
+      }
+
+      .home-banner {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .card {
+        box-shadow: var(--box-shadow-light);
+        background-color: white;
+        border: none;
+        padding: 16px 24px;
+        border-radius: var(--border-radius-light);
+        text-align: center;
+        position: relative;
+      }
+
+      .card-no-border {
+        box-shadow: none;
+      }
+
+      .card-home-banner {
+        padding: 32px 24px 16px 24px;
+      }
+
+      .card-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .card-phone {
+        box-shadow: var(--box-shadow-light);
+        border-radius: var(--border-radius-light);
+        background-color: var(--grey-100);
+        padding: 4px 8px;
+        margin: 8px 0px;
+      }
+
+      .card > .avatar {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .card-blue {
+        background-color: var(--primary-light);
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .card-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .card-grid {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      .card-grid > .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .card-img-square {
+        height: 110px;
+      }
+
+      .avatar {
+        width: 56px;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow-light);
+      }
+
+      .btn {
+        border-radius: var(--border-radius-light);
+        box-shadow: var(--box-shadow-light);
+        display: inline-block;
+      }
+
+      .btn-grey {
+        background-color: var(--grey-100);
+        padding: 4px 32px;
+      }
+
+      .btn-secondary {
+        background-color: var(--secondary-main);
+        border: none;
+        color: var(--grey-800);
+        padding: 8px 48px;
+      }
+
+      .card-image-bg {
+        height: 250px;
+        width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 100;
+      }
+
+      .card-bottom-title {
+        background-color: var(--secondary-dark);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #image-fixed-left {
+        position: absolute;
+        height: 220px;
+        left: 0px;
+        bottom: 0px;
+      }
+
+      #image-fixed-right {
+        position: absolute;
+        height: 220px;
+        right: 0px;
+        bottom: 0px;
+      }
+
+      .round-logo {
+        height: 34px;
+      }
+
+    
+
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar navbar-expand-sm navbar-light navbar-klickrent">
+      <div class="container-fluid mx-2 mx-sm-none">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-klickrent.png" alt="klickrent">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <img src="images/Mail.png" alt="Mail">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/Number.png" alt="Number">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/Phone.png" alt="Phone">
+                  0800 / 563 289 2 - 337
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">
+                    <img src="images/Mail.png" alt="Mail">
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="images/Number.png" alt="Number">
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="images/Phone.png" alt="Phone">
+                    0800 / 563 289 2 - 337
+                  </a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- home banner -->
+    <div class="container-fluid home-banner">
+      <h1>Renting equipment can be this easy</h1>
+      <div class="card card-home-banner">
+        <img class="avatar" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/claire-gtr" />
+        <p class="text-grey text-small">Answers your Questions</p>
+        <p>Marzena Kunysz</p>
+        <div class="card-phone">
+          img<a href="tel:+4930290226270">+49 30 290 226 270</a>
+        </div>
+        <p class="text-small">Mo. – Fr. 10am – 6pm</p>
+        <a href="mailto:marzena.kunysz@klickrent.de" class="text-small">marzena.kunysz@klickrent.de</a>
+      </div>
+      <div class="container">
+        <div class="card card-horizontal">
+          <img src="images/algeco.png" alt="algeco">
+          <img src="images/ruthman.png" alt="ruthman">
+          <img src="images/cat.png" alt="cat">
+          <img src="images/merlo.png" alt="merlo">
+          <img src="images/volvo.png" alt="volvo">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="card card-horizontal p-4">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <div class="card card-no-border text-left px-0">
+              <h4>Our Aim – the perfectly fitting construction equiment</h4>
+              <p>We want you to be able to concentrate on the important aspects   of your work. This is why we make your path to the perfectly fitting construction equipment as easy as possible.</p>
+              <p>With klickrent, you get everything from the Offer to the Invoice in one place.</p>
+              <p>klickrent is a manufacturer- independent digital market for renting construction equipment. </p>
+              <p>The online rental platform brings renters and rental companies together and makes your business more efficient. You just send your request and then we work with our partner network across all of Germany to make you the perfect offer.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 h-100 my-auto">
+            <div class="card card-no-border card-blue cp-3 p-md-5">
+              <div class="text-center">
+                <img src="images/klickrent-round.png" alt="klickrent" class="round-logo mb-3">
+              </div>
+              <h4 class="mb-4 text-primary-klickrent">Become a Partner now</h4>
+              <p class="text-left px-0 px-md-4 text-primary-klickrent"><strong>
+                Professional rental partners meet at klickrent, because that is where the best business is done. If you would also like to benefit from Online-Rentals, our partner management team will be pleased to escort you on your journey to becoming a digital rental company</strong></p>
+              <div class="text-center">
+                <div class="btn btn-grey text-primary-klickrent mt-4">Become a partner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="card-grid mt-5">
+        <div class="card">
+          <img src="images/easy.svg" alt="easy" class="card-img-square">
+          <h4 class="mt-2">It's that easy!</h4>
+        </div>
+        <div class="card">
+          <img src="images/contact.svg" alt="contact" class="card-img-square">
+          <h4 class="mt-2">One Account and Contact person</h4>
+        </div>
+        <div class="card">
+          <img src="images/competence.svg" alt="competence" class="card-img-square">
+          <h4 class="mt-2">Competence & Experience</h4>
+        </div>
+        <div class="card">
+          <img src="images/availability.svg" alt="availability" class="card-img-square">
+          <h4 class="mt-2">Availability & Speed</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="card mt-2">
+        <img src="images/scissor-lift.svg" alt="easy" class="d-none d-lg-block" id="image-fixed-left">
+        <img src="images/walzenbagger.svg" alt="easy" class="d-none d-lg-block" id="image-fixed-right">
+        <img src="images/bestoffer.svg" alt="easy" class="card-img-square">
+        <h4 class="mt-4">Evertime the best offer for you</h4>
+      </div>
+    </div>
+
+    <div class="container text-center pt-5">
+      <h2>Even for bigger plans – we have the right equiment</h2>
+      <p>For more complex rental projects, we will provide you with a personal expert. Select the category you need and leave your phone number. We will get back to you immediately.</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="card-grid my-5">
+        <div class="card p-0">
+          <div class="card-image-bg" style="background-image:url('images/crane.png');">
+          </div>
+          <div class="card-bottom-title">
+            <p>Crane</p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="card-image-bg" style="background-image:url('images/container.png');">
+          </div>
+          <div class="card-bottom-title">
+            <p>Container</p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="card-image-bg" style="background-image:url('images/construction-power.png');">
+          </div>
+          <div class="card-bottom-title">
+            <p>Construction Power</p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="card-image-bg" style="background-image:url('images/refrigeration.png');">
+          </div>
+          <div class="card-bottom-title">
+            <p>Refrigeration/Heater</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 pb-5">
+      <div class="text-center my-5">
+        <div class="btn btn-secondary">Write an E-Mail to Marzena</div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
